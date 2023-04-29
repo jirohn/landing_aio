@@ -1,0 +1,19 @@
+{% if posicion_titulo == 'arriba' %}
+  <h2 class="hero-video-titulo">{{ titulo }}</h2>
+{% endif %}
+
+{% if tipo_contenido == 'imagen' %}
+  <img src="{{ archivo_contenido }}" alt="{{ titulo }}" class="hero-video-imagen">
+{% elseif tipo_contenido == 'video' %}
+  <video controls class="hero-video-video">
+    <source src="{{ archivo_contenido }}" type="video/mp4">
+    <source src="{{ archivo_contenido }}" type="video/webm">
+    Tu navegador no soporta la etiqueta video.
+  </video>
+{% endif %}
+
+
+
+{% if posicion_titulo == 'abajo' %}
+  <h2 class="hero-video-titulo">{{ titulo }}</h2>
+{% endif %}

@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains landing_aio.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function landing_aio_theme() {
+  return [
+    'landing_aio_text_block' => [
+      'variables' => [
+        'texto' => NULL,
+        'destacado' => FALSE,
+      ],
+    ],
+    'landing_aio_hero_video' => [
+      'variables' => [
+        'titulo' => NULL,
+        'posicion_titulo' => NULL,
+        'tipo_contenido' => NULL,
+        'archivo_contenido' => NULL,
+      ],
+    ],
+  ];
+}

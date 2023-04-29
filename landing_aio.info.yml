@@ -1,0 +1,6 @@
+name: Landing AIO
+type: module
+description: 'Módulo que proporciona bloques personalizados para construir fácilmente una landing page.'
+package: Custom
+core_version_requirement: ^10
+version: 1.0.0
