@@ -51,5 +51,19 @@ function landing_aio_theme() {
         'background-color' => NULL,
       ],
     ],
+    'landing_aio_highlighted_text' => [
+      'variables' => [
+        'title_highlighted' => NULL,
+        'text' => NULL,
+        'show_more' => FALSE,
+      ],
+    ],
+    'landing_aio_full_width_video' => [
+      'variables' => [
+        'video_title' => NULL,
+        'video_url' => NULL,
+      ],
+      'template' => 'landing-aio-full-width-video',
+    ],
   ];
 }

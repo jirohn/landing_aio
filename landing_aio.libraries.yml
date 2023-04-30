@@ -7,3 +7,12 @@ featured_product:
   css:
     theme:
       css/featured_product.css: {}
+highlighted_text:
+  version: 1.x
+  css:
+    theme:
+      css/highlighted_text.css: {}
+full_width_video:
+  css:
+    theme:
+      css/full_width_video.css: {}

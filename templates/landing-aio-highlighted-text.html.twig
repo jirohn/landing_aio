@@ -1,0 +1,17 @@
+<div class="highlighted-text-block">
+  <table>
+    <tr>
+      <td class="highlighted-title-cell">
+        <h2 class="highlighted-title">{{ title_highlighted }}</h2>
+      </td>
+      <td class="highlighted-text-cell">
+        <div class="highlighted-text">
+          {{ text | raw }}
+          {% if show_more %}
+            <span class="show-more">...</span>
+          {% endif %}
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

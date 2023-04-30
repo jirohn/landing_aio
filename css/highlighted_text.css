@@ -1,0 +1,31 @@
+.highlighted-text-block table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Hace que las celdas tengan un ancho fijo */
+}
+
+.highlighted-title-cell,
+.highlighted-text-cell {
+  padding: 10px;
+  vertical-align: top;
+  height: 100%; /* Ajusta la altura de las celdas al 100% */
+  position: relative; /* Permite el posicionamiento absoluto de los elementos internos */
+}
+
+.highlighted-title,
+.highlighted-text {
+  text-align: justify;
+  height: 100%; /* Ajusta la altura al 100% */
+  display: flex; /* Permite alinear el contenido de manera vertical */
+  flex-direction: column; /* Organiza el contenido en una columna */
+}
+
+.highlighted-title h2 {
+  margin: 0;
+  flex-grow: 1; /* Ajusta el contenido del título destacado para que ocupe todo el espacio vertical disponible */
+}
+
+.highlighted-text p {
+  margin: 0;
+  flex-grow: 1; /* Ajusta el contenido del texto para que ocupe todo el espacio vertical disponible */
+}
