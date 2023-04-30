@@ -1,0 +1,19 @@
+<div class="grid-content">
+  {% for item in grid_items %}
+    <div class="grid-item{{ item.highlighted ? ' highlighted' : '' }}">
+      <h3>{{ item.title }}</h3>
+      {% if item.content_type == 'imagen' %}
+        <img src="{{ item.content }}" alt="{{ item.title }}">
+      {% elseif item.content_type == 'video' %}
+        <video controls>
+          <source src="{{ item.content }}" type="video/mp4">
+          Tu navegador no soporta la etiqueta video.
+        </video>
+      {% else %}
+        <div class="grid-item-text">
+          {{ item.content }}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

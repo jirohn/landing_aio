@@ -1,0 +1,9 @@
+grid-content:
+  version: 1.x
+  css:
+    theme:
+      css/grid-content.css: {}
+featured_product:
+  css:
+    theme:
+      css/featured_product.css: {}

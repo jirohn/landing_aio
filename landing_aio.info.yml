@@ -4,3 +4,5 @@ description: 'Módulo que proporciona bloques personalizados para construir fác
 package: Custom
 core_version_requirement: ^10
 version: 1.0.0
+dependencies:
+  - drupal:ckeditor

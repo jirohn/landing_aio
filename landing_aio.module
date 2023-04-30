@@ -7,7 +7,18 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 
-
+/**
+ * Implements hook_help().
+ */
+function landing_aio_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.landing_aio':
+      $output = '';
+      $output .= '<h3>' . 'Acerca de' . '</h3>';
+      $output .= '<p>' . 'Landing AIO es un módulo que proporciona bloques para facilitar la creación de landing pages en Drupal 9.' . '</p>';
+      return $output;
+  }
+}
 /**
  * Implements hook_theme().
  */
@@ -25,6 +36,19 @@ function landing_aio_theme() {
         'posicion_titulo' => NULL,
         'tipo_contenido' => NULL,
         'archivo_contenido' => NULL,
+      ],
+    ],
+    'landing_aio_grid_content' => [
+      'variables' => [
+        'grid_items' => [],
+      ],
+    ],
+    'landing_aio_featured_product' => [
+      'variables' => [
+        'title' => NULL,
+        'image_url' => NULL,
+        'description' => NULL,
+        'background-color' => NULL,
       ],
     ],
   ];
