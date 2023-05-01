@@ -1,0 +1,37 @@
+.text-with-icons, .text-with-icons__description, .text-with-icons_text  {
+  text-align: center;
+}
+
+.text-with-icons__title {
+  font-weight: bold;
+}
+
+.text-with-icons__description {
+  font-size: 1.2em;
+}
+.text-with-icons {
+  text-align: center;
+}
+
+.text-with-icons__icon {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.text-with-icons__icon-text {
+display: block;
+margin-top: 0.5rem;
+font-size: 1.1em;
+}
+.four-columns-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.four-columns-table__column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}

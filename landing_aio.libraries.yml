@@ -16,3 +16,7 @@ full_width_video:
   css:
     theme:
       css/full_width_video.css: {}
+text_with_icons:
+  css:
+    theme:
+      css/text_with_icons.css: {}

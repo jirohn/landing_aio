@@ -1,0 +1,51 @@
+<div class="text-with-icons">
+  <div class="text-with-icons_text">
+  <h2>{{ title }}</h2>
+  </div>
+  <div class="text-with-icons__description">{{ description }}</div>
+  
+  <table class="four-columns-table">
+  <tr>
+  {% if icon_url and icon_text and icon_link %}
+    <td class="four-columns-table__column"><div class="text-with-icons__icon">
+      <a href="{{ icon_link }}">
+        <img src="{{ icon_url }}" alt="{{ icon_text }}" />
+
+      </a>
+      <div class="text-with-icons__icon-text text-with-icons">{{ icon_text }}</div>
+    </div></td>
+  {% endif %}
+  {% if icon2_url and icon2_text and icon2_link %}
+    <td class=" four-columns-table__column2"><div class="text-with-icons__icon2">
+      <a href="{{ icon2_link }}">
+        <img src="{{ icon2_url }}" alt="{{ icon2_text }}" />
+        
+      </a>
+            <div class="text-with-icons__icon-text text-with-icons">{{ icon2_text }}</div>
+
+    </div></td>
+  {% endif %}
+    {% if icon3_url and icon3_text and icon3_link %}
+    <td class="four-columns-table__column3"><div class="text-with-icons__icon3">
+      <a href="{{ icon3_link }}">
+        <img src="{{ icon3_url }}" alt="{{ icon3_text }}" />
+        
+      </a>
+      <div class="text-with-icons__icon-text text-with-icons">{{ icon3_text }}</div>
+    </div></td>
+  {% endif %}
+    {% if icon4_url and icon4_text and icon4_link %}
+    <td class="four-columns-table__column4"><div class="text-with-icons__icon4">
+      <a href="{{ icon4_link }}">
+        <img src="{{ icon4_url }}" alt="{{ icon4_text }}" />
+
+        
+      </a>
+      <div class="text-with-icons__icon-text text-with-icons">{{ icon4_text }}</div>
+    </div></td>
+  {% endif %}
+  </tr>
+</table>
+
+
+</div>

@@ -65,5 +65,23 @@ function landing_aio_theme() {
       ],
       'template' => 'landing-aio-full-width-video',
     ],
+    'landing_aio_text_with_icons' => [
+      'variables' => [
+        'title' => NULL,
+        'description' => NULL,
+        'icon_url' => NULL,
+        'icon_text' => NULL,
+        'icon_link' => NULL,
+        'icon2_url' => NULL,
+        'icon2_text' => NULL,
+        'icon2_link' => NULL,
+        'icon3_url' => NULL,
+        'icon3_text' => NULL,
+        'icon3_link' => NULL,
+        'icon4_url' => NULL,
+        'icon4_text' => NULL,
+        'icon4_link' => NULL,
+      ],
+    ],
   ];
 }
